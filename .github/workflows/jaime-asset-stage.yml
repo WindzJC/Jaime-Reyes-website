@@ -27,7 +27,7 @@ jobs:
           from pathlib import Path
           for f in Path("assets").glob("*.jpg"):
               data=f.read_bytes()
-              assert len(data)>15000 and data[:3]==b"\\xff\\xd8\\xff", f"Invalid JPEG: {f}"
+              assert len(data)>15000 and data[:3].hex()=="ffd8ff", f"Invalid JPEG: {f}"
               print(f, len(data))
           assert len(list(Path("assets").glob("*.jpg")))==6
           PY
