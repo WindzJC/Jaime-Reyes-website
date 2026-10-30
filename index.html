@@ -5,7 +5,7 @@
 <meta name="robots" content="noindex,nofollow,noarchive"><meta name="theme-color" content="#08131a">
 <meta name="description" content="Explore the books of Jaime Reyes: In the Beginning and The Lazarus Syndrome, historical fiction and personal nonfiction that confront belief, survival, and the questions we inherit.">
 <meta property="og:title" content="Jaime Reyes — In the Beginning and The Lazarus Syndrome">
-<meta property="og:description" content="The story he almost never finished. The questions that remained.">
+<meta property="og:description" content="The story he almost never finished. The questions that remained."><meta property="og:image" content="https://jaime-reyes-website.pages.dev/assets/book-1.jpg">
 <title>Jaime Reyes — The Stories That Remained</title>
 <style>:root{--ink:#0b181e;--deep:#07151e;--dark:#0d222c;--cream:#f2eee6;--paper:#e8e0d2;--chalk:#e3e6dc;--pale:#f7f2e9;--copper:#d5b586;--cool:#a9c2c8;--cyan:#b0e3eb;--text:#20323c;--serif:Georgia,'Times New Roman',serif;--sans:'Arial',Helvetica,sans-serif}
 *,*:before,*:after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--deep);color:var(--cream);font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}img{max-width:100%;height:auto}a{color:inherit}button,a{touch-action:manipulation}button:focus-visible,a:focus-visible{outline:3px solid #b9edf3;outline-offset:4px}.skip{position:absolute;left:-9999px;top:10px;background:#fff;color:#06121b;padding:12px;z-index:999}.skip:focus{left:14px}.container{width:min(100% - clamp(42px,8vw,136px),1410px);margin:0 auto}.section{padding:clamp(85px,10vw,160px) 0}.eyebrow{font:700 10px/1.4 var(--sans);letter-spacing:.22em;text-transform:uppercase}.warm{color:#e2bf84}.dark-gold{color:#86683e}.wine{color:#86654e}.small-slash{opacity:.5;margin:0 8px}.line-dot{display:inline-block;width:26px;height:1px;background:currentColor;vertical-align:middle;margin-right:9px}.masthead{position:absolute;z-index:30;top:0;left:0;width:100%;border-bottom:1px solid #d5e2e033}.nav-inner{height:86px;width:min(100% - clamp(42px,8vw,136px),1410px);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{font:700 17px var(--sans);letter-spacing:.095em;text-decoration:none;white-space:nowrap}.brand span{font-weight:400}.brand b{color:var(--copper)}.masthead nav{display:flex;gap:clamp(12px,2.1vw,35px);align-items:center}.masthead nav a{text-decoration:none;font:700 10px/1.5 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:#e4e9e8;transition:color .2s}.masthead nav a:hover{color:var(--copper)}.mobile-menu{display:none}
@@ -30,7 +30,61 @@
 .book-inscription{border-left:2px solid #7198a2;padding:9px 0 9px 27px}
 .book-inscription>span{color:#4c6d78}.book-inscription strong{color:#213c49;font-size:clamp(41px,4.5vw,62px);margin:25px 0 12px}.book-inscription i{color:#69858b}.book-inscription p{color:#58747d;max-width:280px}.inscription-line{background:#92a9a5;margin:32px 0 20px}
 @media(max-width:420px){.hero-content .eyebrow .era{display:none}.book-inscription strong{font-size:43px}}
-</style><link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iNiIgZmlsbD0iIzA4MTMxYSIvPjxwYXRoIGQ9Ik0xNSAxOGgxOGMxMCAwIDE1IDUgMTUgMTMgMCA2LTQgMTAtMTAgMTJsMTIgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q3YmQ5MiIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTIyIDI1djI5TTIyIDQwaDE1IiBmaWxsPSJub25lIiBzdHJva2U9IiNlZWYyZWIiIHN0cm9rZS13aWR0aD0iMyIvPjwvc3ZnPgo=" type="image/svg+xml">
+
+/* V5.1 book-first refinements: authentic artwork with exact proportions */
+.hero-layout{width:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(228px,345px);gap:clamp(40px,5vw,98px);align-items:center;position:relative;z-index:2}
+.hero-content{max-width:775px;min-width:0}
+.hero-layout .hero-content h1{font-size:clamp(56px,5.4vw,84px);line-height:1.065}
+.hero-book{margin:0;align-self:center;justify-self:center;width:min(100%,315px);position:relative;transform:rotate(2deg)}
+.hero-book:before{content:'';position:absolute;inset:-8% -12%;border:1px solid #c6dadb25;border-radius:50%;transform:rotate(-8deg);pointer-events:none}
+.hero-book-frame{position:relative;aspect-ratio:2/3;background:linear-gradient(145deg,#0c1523,#102b3b);border:1px solid #e2e7e43d;box-shadow:0 30px 74px #000b,0 0 80px #668fad2b;overflow:hidden}
+.hero-book img{display:block;width:100%;height:100%;object-fit:contain}
+.hero-book figcaption{display:flex;justify-content:space-between;gap:10px;margin-top:25px;padding-top:13px;border-top:1px solid #d9e8e376;font-size:9px;letter-spacing:.13em;color:#beced3}
+.hero-book figcaption strong{font:700 9px var(--sans);letter-spacing:.1em;color:#fff}
+.secondary-cover{margin:0;max-width:320px;width:90%;align-self:center;text-align:center}
+.secondary-cover img{display:block;width:100%;aspect-ratio:907 / 1360;object-fit:contain;background:#103248;box-shadow:12px 17px 45px #09192038}
+.secondary-cover figcaption{font:700 10px var(--sans);letter-spacing:.12em;color:#466672;padding-top:19px}
+.lazarus-aside{display:flex;align-items:center;justify-content:center;padding:40px 10px}
+.book-rows a{grid-template-columns:58px 62px minmax(0,1fr) 130px}
+.edition-cover{width:62px;height:93px;object-fit:cover;box-shadow:2px 7px 18px #0007;background:#183042}
+@media(max-width:1060px) and (min-width:761px){.hero-layout{grid-template-columns:minmax(0,1fr) 240px;gap:33px}.hero-layout .hero-content h1{font-size:clamp(49px,5.7vw,66px)}.hero-book{max-width:220px}}
+@media(max-width:760px){.hero-layout{display:flex;flex-direction:column;gap:24px;align-items:flex-start}.hero-layout .hero-content h1{font-size:clamp(45px,10.9vw,65px)}.hero-book{width:190px;align-self:center;transform:rotate(1deg)}.hero-book:before{display:none}.hero-book figcaption{font-size:8px;margin-top:12px}.first-beat{padding-top:128px;padding-bottom:90px;min-height:0}.hero-endnote{bottom:24px}.book-rows a{grid-template-columns:26px 47px minmax(0,1fr);column-gap:12px;row-gap:6px}.edition-cover{width:47px;height:70px}.book-rows a>div{grid-column:3}.book-exit{grid-column:3;text-align:left;margin-top:4px}}
+@media(max-width:420px){.hero-layout{gap:20px}.hero-layout .hero-content h1{font-size:clamp(42px,11vw,48px);margin-bottom:18px}.hero-content .eyebrow{margin-bottom:20px}.hero-content .book-ident{margin-bottom:17px}.hero-dek{margin-bottom:20px;font-size:13px;line-height:1.62}.hero-book{width:155px}.hero-book figcaption{font-size:7px}.hero-book figcaption strong{font-size:7px}.hero-endnote{font-size:8px}}
+@media(max-width:340px){.hero-layout .hero-content h1{font-size:39px}.hero-book{width:140px}}
+
+/* Honest fallback: the published cover is not substituted with invented art. */
+.hero-book-frame:before{content:'PUBLISHED COVER';position:absolute;left:16px;top:17px;color:#aecbd4;font:700 9px/1.5 var(--sans);letter-spacing:.16em;z-index:0}
+.hero-book-frame:after{content:'In the Beginning';position:absolute;left:16px;right:16px;top:46%;color:#fff;font:400 clamp(20px,2vw,31px)/1.1 var(--serif);text-align:center;z-index:0}
+.hero-book-frame img{position:relative;z-index:1}
+.secondary-cover{position:relative;background:linear-gradient(150deg,#0c2732,#133646);min-height:350px}
+.secondary-cover:before{content:'THE LAZARUS SYNDROME';position:absolute;top:35%;left:15px;right:15px;text-align:center;color:#e9f4f5;font:400 clamp(24px,2vw,33px)/1.2 var(--serif)}
+.secondary-cover img{position:relative;z-index:1}
+html{overflow-x:clip}
+
+/* Honest fallback: the published cover is not substituted with invented art. */
+.hero-book-frame:before{content:'PUBLISHED COVER';position:absolute;left:16px;top:17px;color:#aecbd4;font:700 9px/1.5 var(--sans);letter-spacing:.16em;z-index:0}
+.hero-book-frame:after{content:'In the Beginning';position:absolute;left:16px;right:16px;top:46%;color:#fff;font:400 clamp(20px,2vw,31px)/1.1 var(--serif);text-align:center;z-index:0}
+.hero-book-frame img{position:relative;z-index:1}
+.secondary-cover{position:relative;background:linear-gradient(150deg,#0c2732,#133646);min-height:350px}
+.secondary-cover:before{content:'THE LAZARUS SYNDROME';position:absolute;top:35%;left:15px;right:15px;text-align:center;color:#e9f4f5;font:400 clamp(24px,2vw,33px)/1.2 var(--serif)}
+.secondary-cover img{position:relative;z-index:1}
+/* Real published covers and documented author photography */
+.hero-book-frame:before,.hero-book-frame:after,.secondary-cover:before{content:none!important}
+.hero-book-frame{background:#071521}
+.secondary-cover{background:transparent;min-height:0}
+.author-archive-panel{position:relative;margin:38px 0 30px;min-height:420px;max-width:510px}
+.author-archive-panel figure{margin:0}
+.author-main-photo{position:relative;width:62%;z-index:2}
+.author-main-photo img{display:block;width:100%;aspect-ratio:4/4.7;object-fit:cover;object-position:center 18%;border:1px solid #9ebabe55;box-shadow:8px 18px 55px #0007;filter:saturate(.8)}
+.author-archive-panel figcaption{font:700 9px/1.5 var(--sans);letter-spacing:.15em;color:#b8cdd0;margin-top:12px}
+.author-history-photo{position:absolute;right:0;top:47px;width:39%;z-index:1}
+.author-history-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 25%;filter:grayscale(1) sepia(.12);border:1px solid #e7eee645;box-shadow:10px 14px 45px #0008}
+.author-history-photo figcaption{font-size:8px;max-width:170px}
+.archive-year{position:absolute;right:1%;bottom:2%;font:400 clamp(79px,9vw,138px)/1 var(--serif);letter-spacing:-.08em;color:#b3d7d929;z-index:0}
+.storm-night,.storm-morning{inset:0;transform:none}
+@media(max-width:760px){.hinge-side{display:block}.author-archive-panel{max-width:540px;min-height:390px;margin-top:26px}.author-main-photo{width:58%}.author-history-photo{width:40%;top:30px}.archive-year{font-size:110px}}
+@media(max-width:420px){.author-archive-panel{min-height:310px}.author-main-photo{width:62%}.author-history-photo{width:38%;top:28px}.archive-year{font-size:74px;bottom:3%}.year-caption{max-width:none}}
+</style><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -43,12 +97,20 @@
 <section class="storm-chapter" id="novel" aria-labelledby="hero-heading">
  <div class="storm-stage" aria-hidden="true"><div class="storm-night"></div><div class="storm-morning"></div><div class="storm-vignette"></div><canvas class="rain-canvas"></canvas><div class="lightning-glow"></div></div>
  <div class="storm-sequence"><div class="storm-beat first-beat container">
+ <div class="hero-layout">
   <div class="hero-content"><p class="eyebrow warm"><span class="line-dot"></span> A NOVEL BY JAIME REYES <span class="era"><span class="small-slash">/</span> 40,000 BCE</span></p>
   <p class="book-ident">IN THE BEGINNING <span>THE EARLY DAYS OF RELIGIOUS BELIEFS</span></p>
   <h1 id="hero-heading">He knew the storm would pass.<br><em>They believed he stopped it.</em></h1>
   <p class="hero-dek">In a frightened Neanderthal community, an aging man named Og discovers that knowledge can become something far more powerful: belief.</p>
   <a class="action action-light" href="#turning-point">Enter the story <span aria-hidden="true">↘</span></a>
-  </div><div class="hero-endnote"><span>01 / THE ORIGIN OF AN IDEA</span><span>SCROLL TO FOLLOW THE STORY ↓</span></div>
+  </div>
+  <figure class="hero-book" aria-label="In the Beginning published book cover">
+   <div class="hero-book-frame">
+    <img src="assets/book-1.jpg" alt="Published cover of In the Beginning: The Early Days of Religious Beliefs by Jaime Reyes, showing a figure against blue lightning" width="1000" height="1500" fetchpriority="high" decoding="async">
+   </div>
+   <figcaption><span>THE FEATURED NOVEL</span><strong>IN THE BEGINNING</strong></figcaption>
+  </figure>
+ </div><div class="hero-endnote"><span>01 / THE ORIGIN OF AN IDEA</span><span>SCROLL TO FOLLOW THE STORY ↓</span></div>
  </div>
  <div class="storm-beat second-beat container" id="turning-point">
   <div class="turning-copy"><span class="eyebrow warm">CHAPTER ONE / EPIPHANY</span><h2>The storm ended.<br><em>The story did not.</em></h2><p>Og stages a ritual before Chief Olo and his people. A metal-tipped spear attracts lightning; the storm eventually recedes. The tribe sees proof of divine favor. Og sees a new place for himself among them.</p><a class="text-link bright" href="#inheritance">What the tribe inherited <span aria-hidden="true">↓</span></a></div>
@@ -59,19 +121,23 @@
  <div><p class="eyebrow dark-gold">THE NOVEL / THE LARGER STORY</p><h2>What begins as a moment of persuasion becomes <em>an inheritance.</em></h2><p class="large-copy">Og’s role does not end with one storm. His influence travels through children and grandchildren, becoming part of how his people explain the world and organize their lives.</p><div class="question-row"><span>01</span><p>How does an idea become accepted truth?</p></div><div class="question-row"><span>02</span><p>Who benefits when a community believes?</p></div><div class="question-row"><span>03</span><p>What does the next generation inherit?</p></div><a class="action action-dark" href="#editions">Explore the novel <span aria-hidden="true">↗</span></a></div>
 </div></section>
 <section class="personal-hinge section" id="author"><div class="container hinge-grid">
- <div class="hinge-side"><p class="eyebrow warm">THE PERSON BEHIND THE STORIES</p><span class="giant-year" aria-hidden="true">2017</span><div class="year-caption">THE YEAR THE UNFINISHED STORY COULD NO LONGER WAIT</div></div>
+ <div class="hinge-side"><p class="eyebrow warm">THE PERSON BEHIND THE STORIES</p><div class="author-archive-panel">
+  <figure class="author-main-photo"><img src="assets/site-photo-1.webp" width="750" height="1000" loading="lazy" alt="Portrait of Jaime Reyes in formal attire"><figcaption>JAIME REYES · AUTHOR</figcaption></figure>
+  <figure class="author-history-photo"><img src="assets/site-photo-2.webp" width="750" height="1000" loading="lazy" alt="Archival photograph of Jaime Reyes in military uniform"><figcaption>AN EARLIER CHAPTER OF HIS LIFE</figcaption></figure>
+  <span class="archive-year" aria-hidden="true">2017</span>
+</div><div class="year-caption">THE YEAR THE UNFINISHED STORY COULD NO LONGER WAIT</div></div>
  <div class="hinge-copy"><h2>He had lived a remarkable life.<br><em>Then he nearly lost it.</em></h2><p>Jaime Reyes was born in Puerto Rico, served in Vietnam, ran a business and spent 25 years with Philadelphia’s Sheriff’s Office. He had also carried a story about the origins of religious belief for years without finishing it.</p><p>In a published interview, Reyes described a near-death experience in May 2017 and a prolonged recovery. Returning home, he decided it was time to put that story on paper.</p><div class="hinge-note"><span>IN HIS OWN ACCOUNT</span><p>He completed the first draft of <cite>In the Beginning</cite> in three weeks, then spent months revising it.</p></div><a class="text-link bright" href="https://breakawaydaily.com/in-the-beginning/" target="_blank" rel="noopener noreferrer">Read Jaime’s interview <span aria-hidden="true">↗</span></a></div>
 </div></section>
 <section class="lazarus section" id="lazarus"><div class="container"><div class="section-index"><span>02 / PERSONAL NONFICTION</span><span>A SECOND BODY OF WORK</span></div>
  <div class="lazarus-grid"><div><p class="eyebrow wine">THE LAZARUS SYNDROME / WHY CAN’T I DIE?</p><h2>What happens after a life is declared <em>over?</em></h2><p class="large-copy">Accounts of spontaneous resuscitation, near-death experiences, and one man’s extraordinary personal history lie at the heart of Jaime Reyes’s second book.</p><p class="muted-copy">In <cite>The Lazarus Syndrome</cite>, Reyes draws on reported revival cases and his own experiences. It is an inquiry shaped by personal testimony and medical questions—not a clinical reference or medical guidance.</p><a class="action action-dark" href="#editions">Explore the nonfiction book <span aria-hidden="true">↗</span></a></div>
- <aside class="lazarus-aside"><div class="book-inscription"><span>JAIME REYES</span><strong>The Lazarus<br>Syndrome</strong><i>Why Can’t I Die?</i><div class="inscription-line"></div><p>A memoir and collection of reported returns from death’s threshold.</p></div></aside></div>
+ <aside class="lazarus-aside"><figure class="secondary-cover"><img src="assets/book-4.jpg" loading="lazy" decoding="async" width="907" height="1360" alt="Published cover of The Lazarus Syndrome: Why Can't I Die? by Jaime Reyes, showing a medical heartbeat trace and a stethoscope"><figcaption>THE LAZARUS SYNDROME · JAIME REYES</figcaption></figure></aside></div>
 </div></section>
 <section class="editions section" id="editions"><div class="container"><div class="section-index inverted"><span>03 / THE PUBLISHED WORKS</span><span>ENGLISH & ESPAÑOL</span></div><div class="editions-head"><h2>Two subjects.<br><em>Two languages.</em></h2><p>Explore Jaime Reyes’s books and Spanish-language editions through their published listings.</p></div>
 <div class="book-rows">
-<a href="https://www.amazon.com/Beginning-Early-Days-Religious-Beliefs-ebook/dp/B09VZ656GD" target="_blank" rel="noopener noreferrer"><span class="book-n">01</span><div><span class="book-k">HISTORICAL FICTION / ENGLISH</span><h3>In the Beginning</h3><p>The Early Days of Religious Beliefs</p></div><span class="book-exit">Find edition ↗</span></a>
-<a href="https://www.amazon.com/En-Principio-Origen-Religion-Spanish-ebook/dp/B07DF6H8BZ" target="_blank" rel="noopener noreferrer"><span class="book-n">02</span><div><span class="book-k">HISTORICAL FICTION / ESPAÑOL</span><h3>En el Principio</h3><p>El Origen de Religión</p></div><span class="book-exit">Ver edición ↗</span></a>
-<a href="https://www.amazon.com/Lazarus-Syndrome-collection-resuscitations-Featuring/dp/1685473032" target="_blank" rel="noopener noreferrer"><span class="book-n">03</span><div><span class="book-k">NONFICTION / ENGLISH</span><h3>The Lazarus Syndrome</h3><p>Why Can’t I Die?</p></div><span class="book-exit">Find edition ↗</span></a>
-<a href="https://www.amazon.com/S%C3%ADndrome-L%C3%A1zaro-colecci%C3%B3n-reanimaciones-avivamientos-ebook/dp/B0CS367N6L" target="_blank" rel="noopener noreferrer"><span class="book-n">04</span><div><span class="book-k">NONFICTION / ESPAÑOL</span><h3>El Síndrome de Lázaro</h3><p>¿Por qué no puedo morir?</p></div><span class="book-exit">Ver edición ↗</span></a>
+<a href="https://www.amazon.com/Beginning-Early-Days-Religious-Beliefs-ebook/dp/B09VZ656GD" target="_blank" rel="noopener noreferrer"><span class="book-n">01</span><img class="edition-cover" src="assets/book-1.jpg" alt="English cover of In the Beginning by Jaime Reyes" width="1000" height="1500" loading="lazy" decoding="async"><div><span class="book-k">HISTORICAL FICTION / ENGLISH</span><h3>In the Beginning</h3><p>The Early Days of Religious Beliefs</p></div><span class="book-exit">Find edition ↗</span></a>
+<a href="https://www.amazon.com/En-Principio-Origen-Religion-Spanish-ebook/dp/B07DF6H8BZ" target="_blank" rel="noopener noreferrer"><span class="book-n">02</span><img class="edition-cover" src="assets/book-3.jpg" alt="Spanish edition cover of En el Principio by Jaime Reyes" width="907" height="1360" loading="lazy" decoding="async"><div><span class="book-k">HISTORICAL FICTION / ESPAÑOL</span><h3>En el Principio</h3><p>El Origen de Religión</p></div><span class="book-exit">Ver edición ↗</span></a>
+<a href="https://www.amazon.com/Lazarus-Syndrome-collection-resuscitations-Featuring/dp/1685473032" target="_blank" rel="noopener noreferrer"><span class="book-n">03</span><img class="edition-cover" src="assets/book-4.jpg" alt="English cover of The Lazarus Syndrome by Jaime Reyes" width="907" height="1360" loading="lazy" decoding="async"><div><span class="book-k">NONFICTION / ENGLISH</span><h3>The Lazarus Syndrome</h3><p>Why Can’t I Die?</p></div><span class="book-exit">Find edition ↗</span></a>
+<a href="https://www.amazon.com/S%C3%ADndrome-L%C3%A1zaro-colecci%C3%B3n-reanimaciones-avivamientos-ebook/dp/B0CS367N6L" target="_blank" rel="noopener noreferrer"><span class="book-n">04</span><img class="edition-cover" src="assets/book-2.jpg" alt="Spanish edition cover of El Síndrome de Lázaro by Jaime Reyes" width="1000" height="1500" loading="lazy" decoding="async"><div><span class="book-k">NONFICTION / ESPAÑOL</span><h3>El Síndrome de Lázaro</h3><p>¿Por qué no puedo morir?</p></div><span class="book-exit">Ver edición ↗</span></a>
 </div></div></section>
 <section class="press section" id="press"><div class="container press-grid"><div><p class="eyebrow dark-gold">04 / INDEPENDENT READING</p><h2>The work.<br><em>The response.</em></h2><p class="muted-copy">Read published reviews of <cite>In the Beginning</cite> in their original form. These include both positive observations and critical questions about the premise.</p></div><div class="press-links"><a href="https://www.forewordreviews.com/reviews/in-the-beginning/" target="_blank" rel="noopener noreferrer"><span><b>Foreword Clarion Reviews</b><small>Review by Holly Jordan · 2020</small></span><span aria-hidden="true">↗</span></a><a href="https://www.hollywoodbookreviews.com/in-the-beginning/" target="_blank" rel="noopener noreferrer"><span><b>Hollywood Book Reviews</b><small>Review by Dan MacIntosh</small></span><span aria-hidden="true">↗</span></a><a href="https://jreyesauthor.com/" target="_blank" rel="noopener noreferrer"><span><b>Jaime Reyes’s existing website</b><small>Additional interviews, videos and author information</small></span><span aria-hidden="true">↗</span></a></div></div></section>
 <section class="ending"><div class="container ending-inner"><span class="eyebrow warm">THE WRITING OF JAIME REYES</span><h2>Some questions last<br><em>longer than a lifetime.</em></h2><p>Discover the novel that imagines the first claims to spiritual authority, and the nonfiction work that asks what it means to return from the edge of death.</p><div class="end-links"><a class="action action-light" href="#editions">Explore the books <span aria-hidden="true">↗</span></a><a class="text-link bright" href="https://jreyesauthor.com/#contact" target="_blank" rel="noopener noreferrer">Visit Jaime’s official site <span aria-hidden="true">↗</span></a></div></div></section>
