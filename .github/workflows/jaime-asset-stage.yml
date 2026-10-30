@@ -1,0 +1,41 @@
+name: Stage Jaime Reyes authentic published assets
+on:
+  push:
+    branches: [jaime-v52-assets-review]
+    paths: [.github/workflows/jaime-asset-stage.yml]
+permissions:
+  contents: write
+jobs:
+  stage-authentic-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download published source assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+          curl -fSL --retry 3 --max-time 45 -A "Mozilla/5.0" "https://jreyesauthor.com/wp-content/uploads/2024/08/61-mWO0-alL._SL1500_.jpg" -o assets/book-1.jpg
+          curl -fSL --retry 3 --max-time 45 -A "Mozilla/5.0" "https://jreyesauthor.com/wp-content/uploads/2024/09/71jXB9F3DQL._SL1500_.jpg" -o assets/book-2.jpg
+          curl -fSL --retry 3 --max-time 45 -A "Mozilla/5.0" "https://jreyesauthor.com/wp-content/uploads/2024/08/61ep2-M6lDL._SL1360_.jpg" -o assets/book-3.jpg
+          curl -fSL --retry 3 --max-time 45 -A "Mozilla/5.0" "https://jreyesauthor.com/wp-content/uploads/2024/08/61sbz9e7q-L._SL1360_.jpg" -o assets/book-4.jpg
+          curl -fSL --retry 3 --max-time 45 -A "Mozilla/5.0" "https://jreyesauthor.com/wp-content/uploads/2024/04/IMG_1634.jpg" -o assets/site-photo-1.jpg
+          curl -fSL --retry 3 --max-time 45 -A "Mozilla/5.0" "https://jreyesauthor.com/wp-content/uploads/2024/04/IMG_1552.jpg" -o assets/site-photo-2.jpg
+          python3 - <<'PY'
+          from pathlib import Path
+          for f in Path("assets").glob("*.jpg"):
+              data=f.read_bytes()
+              assert len(data)>15000 and data[:3]==b"\\xff\\xd8\\xff", f"Invalid JPEG: {f}"
+              print(f, len(data))
+          assert len(list(Path("assets").glob("*.jpg")))==6
+          PY
+      - name: Commit assets to review branch only
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.jpg
+          git commit -m "Stage genuine Jaime Reyes book covers and portraits" || exit 0
+          git push origin HEAD:jaime-v52-assets-review
